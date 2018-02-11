@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
@@ -14,6 +19,10 @@ class App extends Component {
     return (
       <div className="App">
         <AppNav></AppNav>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/our-story' component={OurStory} />
+        </Switch>
       </div>
     );
   }
@@ -25,13 +34,13 @@ class AppNav extends Component {
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">Aria and Chris</a>
+            <Link to="/">Aria and Chris</Link>
           </Navbar.Brand>
         <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1} href="#">Our Story</NavItem>
+            <NavItem eventKey={1}><Link to="/our-story">Our Story</Link></NavItem>
             <NavItem eventKey={2} href="#">The Party</NavItem>
             <NavItem eventKey={3} href="#">I am so coming!</NavItem>
             <NavDropdown eventKey={4} title="Menu" id="menu">
@@ -43,6 +52,22 @@ class AppNav extends Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+    );
+  }
+}
+
+class Home extends Component {
+  render() {
+    return (
+      <p>This is the home page</p>
+    );
+  }
+}
+
+class OurStory extends Component {
+  render() {
+    return (
+      <p>This is our story</p>
     );
   }
 }
