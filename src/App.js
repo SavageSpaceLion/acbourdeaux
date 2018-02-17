@@ -1,73 +1,41 @@
 import React, { Component } from 'react';
 import {
   Switch,
-  Route,
-  Link,
+  Route
 } from 'react-router-dom';
-import Navbar from 'react-bootstrap/lib/Navbar';
-import Nav from 'react-bootstrap/lib/Nav';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import NavDropdown from 'react-bootstrap/lib/NavDropdown';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import logo from './logo.svg';
+import styled from 'styled-components'
+
+import AppNav from './components/AppNav'
+import Home from './pages/Home'
+import OurStory from './pages/OurStory'
+import Party from './pages/Party'
+import RSVP from './pages/RSVP'
+import FAQs from './pages/FAQs'
+import ContactUs from './pages/ContactUs'
 import './App.css';
-import './bootstrap/css/bootstrap.min.css';
-import './bootstrap/css/bootstrap-theme.min.css';
+
+const Wrapper = styled.div`
+  // background-color: #BFDBD1;
+  background-color: #6AC4B8;
+  height: 1000px;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <AppNav></AppNav>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/our-story' component={OurStory} />
-        </Switch>
-      </div>
-    );
-  }
-}
-
-class AppNav extends Component {
-  render() {
-    return (
-      <Navbar inverse collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to="/">Aria and Chris</Link>
-          </Navbar.Brand>
-        <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1}><Link to="/our-story">Our Story</Link></NavItem>
-            <NavItem eventKey={2} href="#">The Party</NavItem>
-            <NavItem eventKey={3} href="#">I am so coming!</NavItem>
-            <NavDropdown eventKey={4} title="Menu" id="menu">
-              <MenuItem eventKey={4.1}>FAQs</MenuItem>
-              <MenuItem eventKey={4.2}>Contact Us</MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={4.3}>Admins</MenuItem>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
-}
-
-class Home extends Component {
-  render() {
-    return (
-      <p>This is the home page</p>
-    );
-  }
-}
-
-class OurStory extends Component {
-  render() {
-    return (
-      <p>This is our story</p>
+      <Wrapper>
+        <div className="App">
+          <AppNav></AppNav>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/our-story' component={OurStory} />
+            <Route exact path='/party' component={Party} />
+            <Route exact path='/RSVP' component={RSVP} />
+            <Route exact path='/faq' component={FAQs} />
+            <Route exact path='/contact' component={ContactUs} />
+          </Switch>
+        </div>
+      </Wrapper>
     );
   }
 }
