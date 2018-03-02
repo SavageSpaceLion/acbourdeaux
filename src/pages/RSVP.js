@@ -14,21 +14,21 @@ class RSVP extends Component {
     return (
       <div>
         <Form horizontal>
-          <FormGroup controlId="formHorizontalEmail">
+          <FormGroup controlId="formHorizontalName">
             <Col componentClass={ControlLabel} sm={2}>
               Name
             </Col>
             <Col sm={10}>
-              <FormControl type="email" placeholder="Email" />
+              <FormControl type="name" placeholder="Name" />
             </Col>
           </FormGroup>
 
-          <FormGroup controlId="formHorizontalPassword">
+          <FormGroup controlId="formHorizontalEmail">
             <Col componentClass={ControlLabel} sm={2}>
               Email
             </Col>
             <Col sm={10}>
-              <FormControl type="password" placeholder="Password" />
+              <FormControl type="email" placeholder="Email" />
             </Col>
           </FormGroup>
 
