@@ -1884,10 +1884,8 @@ fieldset[disabled] .form-control {
   padding: 15px 15px;
   font-size: 20px;
 }
-.navbar .navbar-nav > li {
-  border-radius: 6px;
-}
 .navbar .navbar-nav > li > a {
+  border-radius: 6px;
   padding: 10px 15px;
   margin: 10px 3px;
   position: relative;
