@@ -215,11 +215,11 @@ body,
 }
 
 a {
-  color: #1dc7ea;
+  color: #36C7B5;
 }
 a:hover,
 a:focus {
-  color: #42d0ed;
+  color: #999999;
   text-decoration: none;
 }
 
@@ -2364,7 +2364,8 @@ fieldset[disabled] .form-control {
 .card {
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
-  background-color: #ffffff;
+  background-color: #2a5289;
+  color: #FFFFFF;
   margin-bottom: 30px;
 }
 .card .image {
@@ -2435,7 +2436,7 @@ fieldset[disabled] .form-control {
 }
 .card .title {
   margin: 0;
-  color: #333333;
+  color: #f2f2f2;
   font-weight: 300;
 }
 .card .avatar {

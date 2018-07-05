@@ -16,7 +16,7 @@ class App extends Component {
         <div className="main-wrapper">
           <AppNav />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Party} />
             <Route exact path="/our-story" component={OurStory} />
             <Route exact path="/party" component={Party} />
             <Route exact path="/RSVP" component={RSVP} />

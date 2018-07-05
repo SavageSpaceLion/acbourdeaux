@@ -15,10 +15,13 @@ class Party extends Component {
 					<Row>
 						<Col xs={12}>
 							<Card
-								title="Where"
+								title="When and Where"
 								content={
 									<React.Fragment>
 										<ul>
+											<li>
+												When: Friday, August 24th, 2018
+											</li>
 											<li>
 												Place: &nbsp;
 												<a href="https://www.lutsen.com/">
@@ -32,6 +35,21 @@ class Party extends Component {
 											</li>
 											<li>Phone: 218-406-1377</li>
 										</ul>
+									</React.Fragment>
+								}
+							/>
+							<Card
+								title="Reservations"
+								content={
+									<React.Fragment>
+										<p>
+											We have a block of rooms reserved
+											for the weekend. Call 800-360-7666
+											to reserve your room (minimum of 2
+											nights). Do not book online. Visit
+											<a href="https://www.eagleridgeatlutsen.com/lodging.html"> this page </a>
+											for a list of room options.
+										</p>
 									</React.Fragment>
 								}
 							/>
@@ -59,7 +77,7 @@ class Party extends Component {
 												festivities & merriment
 											</li>
 											<li>
-												4:15pm - Begin boarding gondola
+												10:30pm - Begin boarding gondola
 												for the ride down the mountain
 											</li>
 											<li>
@@ -75,7 +93,7 @@ class Party extends Component {
 								content={
 									<React.Fragment>
 										<ul>
-											<li>Casual</li>
+											<li>Casual (Jeans are acceptable)</li>
 											<li>
 												<Underline>NO HEELS</Underline>{" "}
 												while on the mountain - we will
@@ -84,20 +102,6 @@ class Party extends Component {
 												fall through.
 											</li>
 										</ul>
-									</React.Fragment>
-								}
-							/>
-							<Card
-								title="Reservations"
-								content={
-									<React.Fragment>
-										<p>
-											We have a block of rooms reserved
-											for the weekend. Call ___-___-____
-											to reserve your room (minimum of 2
-											nights). Do not book online. See
-											________ for a list of room options.
-										</p>
 									</React.Fragment>
 								}
 							/>
