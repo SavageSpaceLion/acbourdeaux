@@ -105,6 +105,19 @@ class Party extends Component {
 									</React.Fragment>
 								}
 							/>
+							<Card
+								title="Registry"
+								content={
+									<React.Fragment>
+										<p>
+											We are registered at{" "}
+											<a href="https://www.amazon.com/wedding/ariana-sengstock-christopher-bourdeaux-lutsen-august-2018/registry/5925ZS1F8JWT">
+												Amazon
+											</a>
+										</p>
+									</React.Fragment>
+								}
+							/>
 						</Col>
 					</Row>
 				</Grid>
